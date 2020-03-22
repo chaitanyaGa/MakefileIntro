@@ -4,52 +4,53 @@
 </h1>
 
 <body>
-so --- shared object compiled only files -c
+so --- shared object compiled only files -c </br>
+</br>
+#include "weather.h"  /// as it is not from /usr/include  </br>
 
-#include "weather.h"  /// as it is not from /usr/include
+</br>
+gcc weather.so mainprog.c -o executbale.o -g</br>
+</br>
 
+using several library  </br>
+link external objects files   </br>
 
-gcc weather.so mainprog.c -o executbale.o -g
+libraris in system   </br>
+/usr/include ------ all header/declaration for libraries  </br>
+/usr/lib  ------ binaries/definations for library   </br>
 
-
-using several library
-link external objects files 
-
-libraris in system
-/usr/include ------ all header/declaration for libraries
-/usr/lib  ------ binaries/definations for library
-
-2 ways to write it in gcc prompt:
-gcc -lmath prog.c -o uiii -g3
-gcc /usr/lib/libmath.so prog.c -o uiiii -g3
+2 ways to write it in gcc prompt:  </br>
+gcc -lmath prog.c -o uiii -g3 </br>
+gcc /usr/lib/libmath.so prog.c -o uiiii -g3   </br>
 .a --- archive
 
 
 
-modifying the library created by us, we need to compile library.
-we can automate process of compilation  ----- use makefiles
+modifying the library created by us, we need to compile library.    </br>
+we can automate process of compilation  ----- use makefiles   </br>
 
-gcc -std=c11 -Wall -Wextra -c libimage.c -o libimage.so
-gcc -std=c11 -Wall -Wextra limage superimage.c -o superimage
-
-
+gcc -std=c11 -Wall -Wextra -c libimage.c -o libimage.so   </br>
+gcc -std=c11 -Wall -Wextra limage superimage.c -o superimage         </br>
 
 
-automate build process  ---- makefile
-importance of tab in makefile:
+</br>
+</br>
 
+automate build process  ---- makefile  </br>
+importance of tab in makefile:  </br>
+</br>
 
-#Strcture of make file:
-target(what you wish to produce): what is needed to do so
-	How to produce that
+#Strcture of make file:  </br>
+target(what you wish to produce): what is needed to do so </br>
+	How to produce that </br>
 
 	
-	**************running program with makefile
-launch: program
-	./program
+	**************running program with makefile </br>
+launch: program  </br>
+	./program  </br>
 	
-keywords in makefile:
-all
+keywords in makefile:  </br>
+all </br>
 
 </body>
 </html>
